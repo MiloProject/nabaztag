@@ -17,9 +17,9 @@ def dit(phrase):
 	#TODO
 	pass
 
-def chante(fichier):
+def joue(fichier):
 	"""
-	Joue un fichier audio via aplay
+	Joue un fichier audio
 	"""
 
 	#TODO
