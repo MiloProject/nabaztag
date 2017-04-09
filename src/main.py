@@ -14,7 +14,7 @@ import config
 joue(config.AUDIO_START)
 
 dit("Je vais vérifier la connexion")
-if !wifi.teste(config.TEST_HOST):
+if not wifi.teste(config.TEST_HOST):
     # On n'est pas connecté
     dit("Je ne suis pas connecté")
     dit("Démarrage du réseau wifi")
