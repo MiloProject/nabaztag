@@ -12,3 +12,7 @@ AUDIO_START = ""
 
 # Hote vers qui tester la connexion, site d'Eliott
 TEST_HOST = ("developpsoft.github.io", 80)
+
+# Configuration pour le hotspot
+HOSTAPD = "../hostapd.conf"
+DNSMASQ = "../dnsmasq.conf"
