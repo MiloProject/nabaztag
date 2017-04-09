@@ -31,7 +31,7 @@ def teste(to_conn):
 
 def demarre():
     """
-    Démarre un réseau wifi (si aucun n'est disponible
+    Démarre un réseau wifi (si aucun n'est disponible)
     """
     
     # Setup l'addresse IP
