@@ -2,7 +2,8 @@
 
 import speech_recognition as sr
 
-from processor import process
+from processor import process, joue
+from config import AUDIO_OK, AUDIO_ERR
 
 recon = sr.Recognizer()
 micro = sr.Microphone()
@@ -21,13 +22,13 @@ def reco_vocale(*args, **kwargs):
     phrase = recon.recognize_google(audio, language="fr-FR")
     print("[RECO] Phrase : {}".format(phrase))
   except sr.UnknownValueError:
-    # TODO: son erreur
+    joue(AUDIO_ERR)
     print("[RECO] Valeur inconue... :(")
   except sr.RequestError as e:
-    # TODO: son erreur
+    joue(AUDIO_ERR)
     print("[RECO] Je ne peut pas contacter Google :(")
     print("[RECO] Erreur: {}".format(e))
   else: # Si tout vas bien
-    #TODO: son ok
+    joue(AUDIO_OK)
     process(phrase)
     
