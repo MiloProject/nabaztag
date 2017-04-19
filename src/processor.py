@@ -11,11 +11,10 @@ from random import choice
 
 def dit(phrase):
 	"""
-	Utilise espeak/flite pour dire la phrase
+	Utilise espeak pour dire la phrase
 	"""
 
-	#TODO
-	pass
+	execute("espeak -v french '{}'".format(phrase))
 
 def joue(fichier):
 	"""
