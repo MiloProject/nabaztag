@@ -1,9 +1,8 @@
-# TODO: load reco_vocale
-
 # Pour avoir le mot clef!!
 from snowboy_detect import decoder
 
 from processor import dit, joue
+from recon import reco_vocale
 
 # Pour les interruptions
 import signal
