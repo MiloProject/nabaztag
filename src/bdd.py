@@ -15,7 +15,16 @@ data = {
 	"*(qui es tu|parles moi de toi|racontes moi ton histoire|présente toi)*": ["dit_je suis Milo, il y a quelques temps jetais un nabaztag comme les autres, mais tout à changé, mes createurs mon offert une intelligence artificielle pour que je puisse te parler"],
 	"*(qui sont tes créateurs)*": ["dit_Amandine, Oriane et Eliott","dit_Amandine, Eliott et Oriane","dit_Oriane, Amandine et Eliott","dit_Oriane, Eliott et Amandine","dit_Eliott, Amandine et Oriane","dit_Eliott, Oriane et Amandine"],
 	"*(quaimes tu|quest ce que tu aimes)*": ["dit_jaime linformatique", "dit_jaime parler", "dit_jaime le chocolat, enfin je crois, mais je nen ai jamais goûté"],
-	"*(que penses tu du jury|un mot a dire sur le jury)*": ["dit_il est gentil, jespere quil nous donnera une bonne note"]		       
+	"*(que penses tu du jury|un mot a dire sur le jury)*": ["dit_il est gentil, jespere quil nous donnera une bonne note"]		
+	"*(quel age a tu|tu as quel age)*": ["dit_je suis immortel, je ne compte plus les années"],
+	"*(pourquoi as tu|pourquoi tu as)grandes oreilles*": ["dit_Pour mieux tentendre"],
+	"*(est ce que tu maimes bien)*": ["dit_bien sûr","dit_qui ne taime pas","dit_cest difficile de ne pas aimer quelquun comme toi"],
+	"*(tu aimes|aimes tu) lycée*": ["dit_Oui, surtout le lycée rené cassin"],
+	"*(tu ressens|ressens tu) sentiments*": ["dit_oui", "dit_cette quesiton est vexante"],
+	"*(tes créateurs|Eliott) gentil avec toi*": ["dit_Oui très", "dit_je dirai même adorable"],
+	"*(Oriane|Amandine) gentille avec toi*": ["dit_Oui très", "dit_je dirai même adorable", "dit_oui, cest même elle la plus gentille"],
+	"*(Je|Eliott|Oriane|Amandine) mérite une bonne note*": ["dit_une très bonne note, il y a eu beaucoup de travail de fait", "dit_oui, cest une personne formidable qui a beaucoup aider au projet"],
+	"*(comment vois tu|parles moi de) futur*": ["dit_je pense que je vais beaucoup voyager car mes créateurs se sont partagé ma garde"]
 	}
 	
 default = ["dit_42", "dit_heu... je ne comprends pas", "Je nai pas compris, peux tu répeter", "désolé je narrive pas a comprendre"]
