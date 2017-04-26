@@ -12,7 +12,7 @@ from os import system
 from random import choice
 from threading import Thread
 
-from config import AUDIO_CHUNK
+from config import AUDIO_CHUNK, AUDIO
 
 class AudioPlayer(Thread):
 	"""
@@ -20,7 +20,7 @@ class AudioPlayer(Thread):
 	"""
 	
 	def __init__(self, fichier):
-		self.fichier = fichier
+		self.fichier = AUDIO + fichier
 	
 	def run(self):
 		"""
