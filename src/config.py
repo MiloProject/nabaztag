@@ -11,6 +11,8 @@ AUDIO_OK = ""
 AUDIO_START = ""
 AUDIO_ERR = ""
 
+AUDIO_CHUNK = 1024 # pour pyaudio
+
 # Hote vers qui tester la connexion, site d'Eliott
 TEST_HOST = ("developpsoft.github.io", 80)
 
