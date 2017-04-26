@@ -49,13 +49,6 @@ class AudioPlayer(Thread):
 
 		p.terminate()
 
-def dit(phrase):
-	"""
-	Utilise espeak pour dire la phrase
-	"""
-
-	execute("espeak -s 120 -v french '{}'".format(phrase))
-
 def joue(fichier):
 	"""
 	Utilise un 'thread' pour jouer un fichier
