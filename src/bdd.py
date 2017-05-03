@@ -25,6 +25,16 @@ data = {
 	"*(Oriane|Amandine) gentille avec toi*": ["joue:Oui_tres", "joue:je_dirai_même_adorable", "joue:oui_cest_même_elle_la_plus_gentille"],
 	"*(Je|Eliott|Oriane|Amandine) mérite une bonne note*": ["joue:une_très_bonne_note_il_y_a_eu_beaucoup_de_travail_de_fait", "joue:oui_cest_une_personne_formidable_qui_a_beaucoup_aider_au_projet"],
 	"*(comment vois tu|parles moi de) futur*": ["joue:je_pense_que_je_vais_beaucoup_voyager_car_mes_créateurs_se_sont_partagé_ma_garde"]
+	"*(En quoi crois-tu)*": ["joue:je_crois_en_lhomme_même_si_cela_nest_pas_gagné","joue:je_crois_en_mes_créateurs_même_si_cela_est_une_cause_perdue"]
+	"*(Connais-tu le sens de la vie)*": ["joue:les_carooooottes";"parce_que_la_vie_a_un_sens"]
+	"*(De quoi te nourris-tu)*": ["joue:je_me_nourris_de_la_connaissance_du_monde_de_lamour_et_de_lhomme_nan_jplaisante_carooooottes"]
+	"*(Penses-tu être intelligent)*": ["joue:mon_intelligence_dépend_de_celle_de_mes_créateurs_je_pense_que_je_suis_mal_parti"]
+	"*(Tu es un lapin ou un robot)*": ["joue:je_suis_un_chat_miaou","joue:etre_ou_ne_pas_etre_telle_est_la_question"]
+	"*(Peux-tu m’aider)*": ["joue:non_debrouilles_toi","joue:jaide_pas_nimporte_qui_moi_non_mais_oh"]
+	"*(Que souhaites-tu)*": ["joue:milo_president"]
+	"*(Et quel est ton programme politique)*": ["joue:interner_mes_créateurs","joue:payer_en_karrotz","joue:domination_des_carottes","joue:milo_dieu_de_tous_les_hommes"]
+	"*(Pourquoi t’appelles-tu Milo)*": ["joue:encore_un_coup_tordu_de_mes_créateurs","joue:vous_vous_posez_encore_la_question_avec_les_créateurs_que_jai"]
+	"*(J’ai des carottes)*": ["joue:carooottes","joue:a_moooooi","joue:elles_sont_pas_fraiches_tes_carottes"]
 	}
 	
 default = ["joue:42", "joue:heu... je ne comprends pas", "joue:je_nai_pas_compris_peux_tu_répeter", "joue:désolé_je_narrive_pas_a_comprendre"]
