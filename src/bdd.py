@@ -8,24 +8,24 @@ La valeur est une liste des actions dispos (dit_blabla, chante_fichier etc...)
 data = {
 	"*(coucou|bonjour|salut)*": ["joue:salut", "joue:bonjour", "joue:coucou"],
 	"*(comment tu tappelles|comment tappelles tu|quel est ton nom)*": ["joue:mon_nom_est_milo", "joue:je_mappelle_milo"],
-	"*(ça va|comment ça va|comment vas tu|comment tu vas)*":  ["dit_ça va bien et toi", "dit_ca va merci et toi"],
-	"*(que fais tu|tu fais quoi)*": ["dit_je réflechis au sens de la vie et toi", "dit_je pense au sens de la vie, ca marrive de temps en temps, pas toi", "dit_rien, je mennuie"],
-	"*(tu es |es tu) occupé*": ["dit_non je ne fais rien et toi"],
-	"*(((raconte moi|dis moi) blague)|((raconte moi|tu connais) histoire drole))*": ["dit_que dis un papier qui tombe dans leau, je nai pas pieds","dit_cest lhistoire dun x carré qui rentre dans une foret et qui en ressort en x, que sest il passé, il sest pris une racine", "dit_il y a dix types de personnes dans le monde, ceux qui parlent le binaire, ceux qui ne le parlent pas et ceux qui ne sattendaient pas a ce que cette blague soit en base trois"],
-	"*(qui es tu|parles moi de toi|racontes moi ton histoire|présente toi)*": ["dit_je suis Milo, il y a quelques temps jetais un nabaztag comme les autres, mais tout à changé, mes createurs mon offert une intelligence artificielle pour que je puisse te parler"],
-	"*(qui sont tes créateurs)*": ["dit_Amandine, Oriane et Eliott","dit_Amandine, Eliott et Oriane","dit_Oriane, Amandine et Eliott","dit_Oriane, Eliott et Amandine","dit_Eliott, Amandine et Oriane","dit_Eliott, Oriane et Amandine"],
-	"*(quaimes tu|quest ce que tu aimes)*": ["dit_jaime linformatique", "dit_jaime parler", "dit_jaime le chocolat, enfin je crois, mais je nen ai jamais goûté"],
-	"*(que penses tu du jury|un mot a dire sur le jury)*": ["dit_il est gentil, jespere quil nous donnera une bonne note"]		
-	"*(quel age a tu|tu as quel age)*": ["dit_je suis immortel, je ne compte plus les années"],
-	"*(pourquoi as tu|pourquoi tu as)grandes oreilles*": ["dit_Pour mieux tentendre"],
-	"*(est ce que tu maimes bien)*": ["dit_bien sûr","dit_qui ne taime pas","dit_cest difficile de ne pas aimer quelquun comme toi"],
-	"*(tu aimes|aimes tu) lycée*": ["dit_Oui, surtout le lycée rené cassin"],
-	"*(tu ressens|ressens tu) sentiments*": ["dit_oui", "dit_cette quesiton est vexante"],
-	"*(tes créateurs|Eliott) gentil avec toi*": ["dit_Oui très", "dit_je dirai même adorable"],
-	"*(Oriane|Amandine) gentille avec toi*": ["dit_Oui très", "dit_je dirai même adorable", "dit_oui, cest même elle la plus gentille"],
-	"*(Je|Eliott|Oriane|Amandine) mérite une bonne note*": ["dit_une très bonne note, il y a eu beaucoup de travail de fait", "dit_oui, cest une personne formidable qui a beaucoup aider au projet"],
-	"*(comment vois tu|parles moi de) futur*": ["dit_je pense que je vais beaucoup voyager car mes créateurs se sont partagé ma garde"]
+	"*(ça va|comment ça va|comment vas tu|comment tu vas)*":  ["joue:ça_va_bien_et_toi", "joue:ca_va_merci_et_toi"],
+	"*(que fais tu|tu fais quoi)*": ["joue:je_réflechis_au_sens_de_la_vie_et_toi", "joue:je_pense_au_sens_de_la_vie_ca_marrive_de_temps_en_temps_pas_toi", "joue:rien_je_mennuie"],
+	"*(tu es |es tu) occupé*": ["joue:non_je_ne_fais_rien_et_toi"],
+	"*(((raconte moi|dis moi) blague)|((raconte moi|tu connais) histoire drole))*": ["joue:blague_du_papier","joue:blague_racine", "joue:blague_binaire"],
+	"*(qui es tu|parles moi de toi|racontes moi ton histoire|présente toi)*": ["joue:je_suis_Milo_il_y_a_quelques_temps_jetais_un_nabaztag_comme_les_autres_mais_tout_à_changé_mes_createurs_mon_offert_une_intelligence_artificielle_pour_que_je_puisse_te_parler"],
+	"*(qui sont tes créateurs)*": ["joue:A_O_E","joue:A_E_O","joue:O_A_E","joue:O_E_A","joue:E_A_O","joue:E_O_A"],
+	"*(quaimes tu|quest ce que tu aimes)*": ["joue:jaime_linformatique", "joue:jaime_parler", "joue:jaime_le_chocolat_enfin_je_crois_mais_je_nen_ai_jamais_goûté"],
+	"*(que penses tu du jury|un mot a dire sur le jury)*": ["joue:il_est_gentil_jespere_quil_nous_donnera_une_bonne_note"]		
+	"*(quel age a tu|tu as quel age)*": ["joue:je_suis_immortel_je_ne_compte_plus_les_années"],
+	"*(pourquoi as tu|pourquoi tu as)grandes oreilles*": ["joue:pour_mieux_tentendre"],
+	"*(est ce que tu maimes bien)*": ["joue:bien_sur","joue:qui_ne_taime_pas","joue:cest_difficile_de_ne_pas_aimer_quelquun_comme_toi"],
+	"*(tu aimes|aimes tu) lycée*": ["joue:oui_surtout_le_lycée_rené_cassin"],
+	"*(tu ressens|ressens tu) sentiments*": ["joue:oui", "joue:cette_quesiton_est_vexante"],
+	"*(tes créateurs|Eliott) gentil avec toi*": ["joue:Oui_très", "joue:je_dirai_même_adorable"],
+	"*(Oriane|Amandine) gentille avec toi*": ["joue:Oui_tres", "joue:je_dirai_même_adorable", "joue:oui_cest_même_elle_la_plus_gentille"],
+	"*(Je|Eliott|Oriane|Amandine) mérite une bonne note*": ["joue:une_très_bonne_note_il_y_a_eu_beaucoup_de_travail_de_fait", "joue:oui_cest_une_personne_formidable_qui_a_beaucoup_aider_au_projet"],
+	"*(comment vois tu|parles moi de) futur*": ["joue:je_pense_que_je_vais_beaucoup_voyager_car_mes_créateurs_se_sont_partagé_ma_garde"]
 	}
 	
-default = ["dit_42", "dit_heu... je ne comprends pas", "Je nai pas compris, peux tu répeter", "désolé je narrive pas a comprendre"]
+default = ["joue:42", "joue:heu... je ne comprends pas", "joue:je_nai_pas_compris_peux_tu_répeter", "joue:désolé_je_narrive_pas_a_comprendre"]
 
