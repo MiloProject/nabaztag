@@ -6,8 +6,8 @@ La valeur est une liste des actions dispos (dit_blabla, chante_fichier etc...)
 """
 
 data = {
-	"*(coucou|bonjour|salut)*": ["dit_salut", "dit_bonjour", "dit_coucou"],
-	"*(comment tu tappelles|comment tappelles tu|quel est ton nom)*": ["dit_mon nom est milo", "dit_je m'appelle milo"],
+	"*(coucou|bonjour|salut)*": ["joue:salut", "joue:bonjour", "joue:coucou"],
+	"*(comment tu tappelles|comment tappelles tu|quel est ton nom)*": ["joue:mon_nom_est_milo", "joue:je_mappelle_milo"],
 	"*(ça va|comment ça va|comment vas tu|comment tu vas)*":  ["dit_ça va bien et toi", "dit_ca va merci et toi"],
 	"*(que fais tu|tu fais quoi)*": ["dit_je réflechis au sens de la vie et toi", "dit_je pense au sens de la vie, ca marrive de temps en temps, pas toi", "dit_rien, je mennuie"],
 	"*(tu es |es tu) occupé*": ["dit_non je ne fais rien et toi"],
