@@ -6,10 +6,10 @@ SENSIBILITE = 0.5 # entre 0 et 1!
 SLEEP_TIME = 0.03 # Temps entre chaque recherche de mot clef
 
 # Chemin vers les fichiers audio
-AUDIO = "../data/audio/"
-AUDIO_OK = "utils/ok.wav"
-AUDIO_START = "utils/start.wav"
-AUDIO_ERR = "utils/err.wav"
+AUDIO = "../data/"
+AUDIO_OK = "ok.wav"
+AUDIO_START = "start.wav"
+AUDIO_ERR = "err.wav"
 
 AUDIO_CHUNK = 1024 # pour pyaudio
 
