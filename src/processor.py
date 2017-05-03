@@ -18,7 +18,7 @@ def joue(fichier):
 	Joue un fichier
 	"""
 	
-	if !fichier.endwith(".wav"):
+	if not fichier.endwith(".wav"):
 		fichier += ".wav"
 	
 	print("[PROC] On joue {}".format(fichier))
