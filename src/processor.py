@@ -54,7 +54,7 @@ def traite(todo):
 	
 	to_exec = choice(todo)
 	# On récupère l'action et son param
-	fct, param = to_exec.split("_")
+	fct, param = to_exec.split(":")
 	# On l'execute
 	# !!!! DANGER
 	eval("{}({})".format(fct, param))
