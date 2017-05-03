@@ -26,7 +26,7 @@ def reco_vocale(*args, **kwargs):
     print("[RECO] Valeur inconue... :(")
   except sr.RequestError as e:
     joue(AUDIO_ERR)
-    print("[RECO] Je ne peut pas contacter Google :(")
+    print("[RECO] Je ne peux pas contacter Google :(")
     print("[RECO] Erreur: {}".format(e))
   else: # Si tout vas bien
     joue(AUDIO_OK)

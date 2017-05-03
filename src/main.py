@@ -12,15 +12,14 @@ import wifi
 
 joue(AUDIO_START)
 
-dit("Je vais vérifier la connexion")
+joue("verifie_connection.wav")
 if not wifi.teste(TEST_HOST):
     # On n'est pas connecté
-    dit("Je ne suis pas connecté")
-    dit("Démarrage du réseau wifi")
+    joue("pas_connecte.wav")
     wifi.demarre()
 else:
     # On vas pouvoir continuer
-    dit("Je suis connecté à Internet")
+    joue("connecte.wav")
     
     # Marque s'il y eu une interruption
     interrupted = False
