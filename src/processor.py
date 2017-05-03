@@ -18,6 +18,9 @@ def joue(fichier):
 	Joue un fichier
 	"""
 	
+	if !fichier.endwith(".wav"):
+		fichier += ".wav"
+	
 	print("[PROC] On joue {}".format(fichier))
 	wf = wave.open(fichier, 'rb')
 
