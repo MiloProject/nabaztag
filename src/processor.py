@@ -22,7 +22,7 @@ def joue(fichier):
 		fichier += ".wav"
 	
 	print("[PROC] On joue {}".format(fichier))
-	wf = wave.open(fichier, 'rb')
+	wf = wave.open(AUDIO + fichier, 'rb')
 
 	p = pyaudio.PyAudio()
 
