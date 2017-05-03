@@ -69,7 +69,7 @@ def process(phrase):
 
 	for key in bdd.data.keys():
 		prog = re.compile(key)
-		if prog.match(phrase):
+		if prog.match(phrase.lower()):
 			traite(bdd.data[key])
 			# Fin
 			return
