@@ -15,7 +15,7 @@ data = {
 	"*(qui es tu|parles moi de toi|racontes moi ton histoire|présente toi)*": ["joue:je_suis_Milo_il_y_a_quelques_temps_jetais_un_nabaztag_comme_les_autres_mais_tout_à_changé_mes_createurs_mon_offert_une_intelligence_artificielle_pour_que_je_puisse_te_parler"],
 	"*(qui sont tes créateurs)*": ["joue:A_O_E","joue:A_E_O","joue:O_A_E","joue:O_E_A","joue:E_A_O","joue:E_O_A"],
 	"*(quaimes tu|quest ce que tu aimes)*": ["joue:jaime_linformatique", "joue:jaime_parler", "joue:jaime_le_chocolat_enfin_je_crois_mais_je_nen_ai_jamais_goûté"],
-	"*(que penses tu du jury|un mot a dire sur le jury)*": ["joue:il_est_gentil_jespere_quil_nous_donnera_une_bonne_note"]		
+	"*(que penses tu du jury|un mot a dire sur le jury)*": ["joue:il_est_gentil_jespere_quil_nous_donnera_une_bonne_note"],
 	"*(quel age a tu|tu as quel age)*": ["joue:je_suis_immortel_je_ne_compte_plus_les_années"],
 	"*(pourquoi as tu|pourquoi tu as)grandes oreilles*": ["joue:pour_mieux_tentendre"],
 	"*(est ce que tu maimes bien)*": ["joue:bien_sur","joue:qui_ne_taime_pas","joue:cest_difficile_de_ne_pas_aimer_quelquun_comme_toi"],
