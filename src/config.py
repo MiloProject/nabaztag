@@ -9,7 +9,6 @@ SLEEP_TIME = 0.03 # Temps entre chaque recherche de mot clef
 AUDIO = "../data/"
 AUDIO_OK = "ok.wav"
 AUDIO_START = "start.wav"
-AUDIO_ERR = "err.wav"
 
 AUDIO_CHUNK = 1024 # pour pyaudio
 
