@@ -5,7 +5,7 @@ from snowboy_detect import decoder
 
 from processor import joue
 from recon import reco_vocale
-from config import AUDIO_START, AUDIO_OK, SENSIBILITE, MODEL, TEST_HOST, SLEEP_TIME
+from config import AUDIO_ERR, AUDIO_START, AUDIO_OK, SENSIBILITE, MODEL, TEST_HOST, SLEEP_TIME
 
 # Pour les interruptions
 import signal
@@ -14,14 +14,13 @@ import wifi
 
 joue(AUDIO_START)
 
-joue("verifie_connection.wav")
 if not wifi.teste(TEST_HOST):
     # On n'est pas connecté
-    joue("pas_connecte.wav")
+    joue("AUDIO_ERR")
     wifi.demarre()
 else:
     # On vas pouvoir continuer
-    joue("connecte.wav")
+    joue("AUDIO_OK")
     
     # Marque s'il y eu une interruption
     interrupted = False
