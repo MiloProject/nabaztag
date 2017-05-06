@@ -3,7 +3,7 @@
 import speech_recognition as sr
 
 from processor import process, joue
-from config import AUDIO_OK, AUDIO_ERR
+from config import AUDIO_OK
 
 recon = sr.Recognizer()
 micro = sr.Microphone()
