@@ -2,11 +2,12 @@
 
 import collections
 import pyaudio
-import snowboydetect
 import time
 import wave
 import os
 import logging
+
+from snowboy_detect import snowboydetect
 
 logging.basicConfig()
 logger = logging.getLogger("snowboy")
