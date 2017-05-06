@@ -16,11 +16,11 @@ joue(AUDIO_START)
 
 if not wifi.teste(TEST_HOST):
     # On n'est pas connecté
-    joue("AUDIO_ERR")
+    joue(AUDIO_ERR)
     wifi.demarre()
 else:
     # On vas pouvoir continuer
-    joue("AUDIO_OK")
+    joue(AUDIO_OK)
     
     # Marque s'il y eu une interruption
     interrupted = False

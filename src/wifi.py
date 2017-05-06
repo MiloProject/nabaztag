@@ -16,7 +16,7 @@ def teste(to_conn):
     
     try:
         s.connect((to_conn))
-        s.send("GET /") # Récupère la page principale
+        s.send("GET /".encode("utf8")) # Récupère la page principale
     except:
         # Il y un erreur donc pas de connexion
         result = False
