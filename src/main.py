@@ -1,3 +1,5 @@
+#! /usr/bin/python3
+
 # Pour avoir le mot clef!!
 from snowboy_detect import decoder
 
