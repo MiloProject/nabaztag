@@ -1,7 +1,7 @@
 # Pour avoir le mot clef!!
 from snowboy_detect import decoder
 
-from processor import dit, joue
+from processor import joue
 from recon import reco_vocale
 from config import AUDIO_OK, SENSIBILITE, MODEL, TEST_HOST, SLEEP_TIME
 
