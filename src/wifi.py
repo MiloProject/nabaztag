@@ -33,4 +33,4 @@ def demarre():
     """
     Démarre un réseau wifi (si aucun n'est disponible)
     """
-    execute("../start-ap.sh")
+    execute("sudo ../start-ap.sh")
