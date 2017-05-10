@@ -34,16 +34,6 @@ data = {
 	"*(Pourquoi t’appelles-tu Milo)*": ["joue:coup_tordu","joue:nom_question"],
 	"*(J’ai des carottes)*": ["joue:des_carottes","joue:a_moi","joue:carotte_pas_fraiche"],
 	"*(Que penses tu de Cortana)*": ["joue:cortana"],
-	
-### j'ai écris les sons "-é" sous la forme "-er" // du type "publiciter". Bien ou pas ?
-	"*(Sais tu conduire)*": ["joue:lamborghini"],
-	"*(Quel est le poids d'une pomme*": ["joue:environ_180_grammes_mais_attention_a_ne_pas_manger_les_pepins_car_ils_sont_toxiques_a_cause_du_cyanure_quil_contient"]
-	"*(Que penses tu de Google, Apple et Microsoft)*": ["joue: je_ne_me_prononcerais_pas_sur_le_sujet_etant_donner_les_avis_divergents_de_mes_createurs"]
-	"*(Cite moi les pays de l'Union Européenne)*": ["joue:allemagne_autriche_belgique_bulgarie_chypre_croatie_danemark_espagne_estonie_finlande_france_grece_hongrie_irlande_italie_lettonie_lituanie_luxembourg_malte_pays_bas_pologne_portugal_république_tcheque_roumanie_royaume_uni_slovaquie_slovénie_suede"]
-	"*(Cite moi Bill Gates)*": ["joue:la_meilleure_des_publiciciter_est_un_client_satisfait", "joue:ce_que_je_sais_faire_de_meiux_cest_partager_mon-enthousiasme"]
-	"*(Cite moi Steve Jobs)*": ["joue:innover_cest_savoir_abandonner_des_milliers_de_bonnes_idees", "joue:jechangerai_toute_ma_technologie_pour_un_apres_midi_avec_socrate"]
-	"*Cite moi (Larry Page|Sergei Brin)*": ["joue:la_vitesse_et_lexcellence_deux_concepts_cles_pour_google", "joue:pour_moi_il_sagit_de_preserver_lhistoire_et_la_rendre_accessible_a_tout_le_monde"]
-	"*(Cite moi Richard Stallman)*": ["joue:si_les_programmeurs_meritent_detre_recompensés_pour_la_creation_de_programmes_novateurs_de_meme_ils_meritent_detre_punis_sils_limitent_lutilisation_de_ces_programmes"]
 	}
 	
 default = ["joue:pas_compris", "joue:pas_compris_repete", "joue:arrive_pas_comprendre"]
