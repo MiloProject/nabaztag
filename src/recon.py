@@ -1,4 +1,4 @@
-# Le reconnaissance vocale
+# La reconnaissance vocale
 
 import speech_recognition as sr
 
