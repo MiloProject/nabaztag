@@ -2,10 +2,13 @@
 
 dev=wlan0
 
-conf_hostapd=./hostapd.conf
-conf_dnsmasq=./dnsmasq.conf
+# Préconfiguré pour le RPI
+conf_hostapd=/home/pi/nabaztag/hostapd.conf
+conf_dnsmasq=/home/pi/nabaztag/dnsmasq.conf
 
 killall wpa_supplicant
+killall hostapd
+killall dnsmasq
 
 ifconfig $dev down
 ifconfig $dev up
@@ -17,7 +20,7 @@ sleep 5
 ifconfig $dev 10.0.0.1 netmask 255.255.255.0
 route add -net 10.0.0.0 netmask 255.255.255.0 gw 10.0.0.1
 
-dnsmasq -C $conf_dnspmasq $dev
+dnsmasq -C $conf_dnsmasq
 
 echo '1' > /proc/sys/net/ipv4/ip_forward
 iptables --policy INPUT ACCEPT

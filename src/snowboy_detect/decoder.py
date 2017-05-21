@@ -104,6 +104,7 @@ class HotwordDetector(object):
         self.ring_buffer = RingBuffer(
             self.detector.NumChannels() * self.detector.SampleRate() * 5)
         self.audio = pyaudio.PyAudio()
+        print(self.detector.SampleRate())
         self.stream_in = self.audio.open(
             input=True, output=False,
             format=self.audio.get_format_from_width(

@@ -11,7 +11,9 @@ import wave
 from os import system
 from random import choice
 
-from config import AUDIO_CHUNK, AUDIO
+from config import AUDIO_CHUNK, AUDIO, AUDIO_ERR
+
+from snowboy_detect import decoder
 
 def joue(fichier):
 	"""
@@ -22,6 +24,7 @@ def joue(fichier):
 		fichier += ".wav"
 	
 	print("[PROC] On joue {}".format(fichier))
+	"""
 	wf = wave.open(AUDIO + fichier, 'rb')
 
 	p = pyaudio.PyAudio()
@@ -43,6 +46,9 @@ def joue(fichier):
 	stream.close()
 
 	p.terminate()
+	"""
+
+	decoder.play_audio_file(fname=AUDIO+fichier)
 	
 def execute(cmd):
 	"""
@@ -56,8 +62,12 @@ def traite(todo):
 	"""
 	
 	to_exec = choice(todo)
-	# On récupère l'action et son param
+	print("[RECO] Execution {}".format(to_exec))
+        # On récupère l'action et son param
 	fct, param = to_exec.split(":")
+	# Fix un petit bug ;)
+	if fct == "joue":
+		param = '"' + param + '"'
 	# On l'execute
 	# !!!! DANGER
 	eval("{}({})".format(fct, param))
@@ -68,7 +78,13 @@ def process(phrase):
 	"""
 
 	for key in bdd.data.keys():
-		prog = re.compile(key)
+		print("[PROC] Essai : {}".format(key))
+		try:
+			prog = re.compile(key)
+		except Exception as e:
+			print(e)
+			joue(AUDIO_ERR)
+			return
 		if prog.match(phrase.lower()):
 			traite(bdd.data[key])
 			# Fin

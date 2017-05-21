@@ -7,12 +7,17 @@ from processor import joue
 from recon import reco_vocale
 from config import AUDIO_ERR, AUDIO_START, AUDIO_OK, SENSIBILITE, MODEL, TEST_HOST, SLEEP_TIME
 
+from time import sleep
+
 # Pour les interruptions
 import signal
 
 import wifi
 
 joue(AUDIO_START)
+
+# On attend que la connexion soit établie
+sleep(2)
 
 if not wifi.teste(TEST_HOST):
     # On n'est pas connecté
@@ -42,13 +47,16 @@ else:
     signal.signal(signal.SIGTERM, signal_handler)
     
     # Détecte le mot clef (Milo)
-    detecteur = snowboydecoder.HotwordDetector(MODEL, sensitivity=SENSIBILITE)
+    #detecteur = decoder.HotwordDetector(MODEL, sensitivity=SENSIBILITE)
     print('[MAIN] En écoute...')
     
     # Dès qu'il y un mot clef, on démarre la reconnaissance vocale
-    detecteur.start(detected_callback=reco_vocale, # Action dès que l'on capte un mot clef
-                   interrupt_check=interrupt_callback, # Check si on s'est arrêté
-                   sleep_time=SLEEP_TIME)
+    #detecteur.start(detected_callback=reco_vocale, # Action dès que l'on capte un mot clef
+    #               interrupt_check=interrupt_callback, # Check si on s'est arrêté
+    #               sleep_time=SLEEP_TIME)
     
     # Si on arrive ici, le detecteur s'est arrêté
-    detecteur.terminate()
+    #detecteur.terminate()
+
+    while 1:
+        reco_vocale()
