@@ -34,7 +34,7 @@ data = {
 	".*(ai|veu).*carottes.*": ["joue:des_carottes","joue:a_moi","joue:carotte_pas_fraiche"],
 	".*pense.*tu.*cortana.*": ["joue:cortana"],
 	".*(joue|chante).*(chanson|musique).*": ["joue:i_kissed_a_girl", "joue:si_je_men_sors", "joue:trem_bala"],
-	".*bonne nuit.*": ["execute:sudo poweroff"],
+	".*bonne nuit.*": ["execute:sudo killall -s 9 main.py && sudo poweroff"],
 	}
 	
 default = ["joue:pas_compris", "joue:pas_compris_repete", "joue:arrive_pas_comprendre"]
