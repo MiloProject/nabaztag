@@ -14,7 +14,7 @@ data = {
 	".*(qui es tu|parle moi de toi|(raconte moi|quelle est) ton histoire|(présente toi|peux tu te présenter))": ["joue:presentation"],
 	".*(qui sont).*(créateurs)": ["joue:createurs"],
 	".*qu.*(tu.*aime|aime.*tu).*": ["joue:jaime_linformatique", "joue:jaime_parler", "joue:jaime_le_chocolat"],
-	".*(pense|mot).*jury": ["joue:jury"]		
+	".*(pense|mot).*jury": ["joue:jury"],		
 	".*qu.*age.*": ["joue:immortel"],
 	".*pourquoi.*grandes oreilles.*": ["joue:pour_mieux_tecouter"],
 	".*qu.*m.*aime.*": ["joue:bien_sur","joue:qui_ne_taime_pas","joue:difficile_aimer"],
