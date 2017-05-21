@@ -76,7 +76,7 @@ class SnowboyDetect(_object):
     __getattr__ = lambda self, name: _swig_getattr(self, SnowboyDetect, name)
     __repr__ = _swig_repr
     def __init__(self, *args, **kwargs): 
-        this = _snowboydetect.new_SnowboyDetect(*args)
+        this = _snowboydetect.new_SnowboyDetect(*args, **kwargs)
         try: self.this.append(this)
         except: self.this = this
     def Reset(self): return _snowboydetect.SnowboyDetect_Reset(self)
