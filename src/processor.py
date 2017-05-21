@@ -66,8 +66,7 @@ def traite(todo):
         # On récupère l'action et son param
 	fct, param = to_exec.split(":")
 	# Fix un petit bug ;)
-	if fct == "joue":
-		param = '"' + param + '"'
+	param = '"' + param + '"'
 	# On l'execute
 	# !!!! DANGER
 	eval("{}({})".format(fct, param))
