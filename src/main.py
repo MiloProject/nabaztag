@@ -1,8 +1,5 @@
 #! /usr/bin/python3
 
-# Pour avoir le mot clef!!
-from snowboy_detect import decoder
-
 from processor import joue
 from recon import reco_vocale
 from config import AUDIO_ERR, AUDIO_START, AUDIO_OK, SENSIBILITE, MODEL, TEST_HOST, SLEEP_TIME
