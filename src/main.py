@@ -49,14 +49,8 @@ else:
     # Détecte le mot clef (Milo)
     #detecteur = decoder.HotwordDetector(MODEL, sensitivity=SENSIBILITE)
     print('[MAIN] En écoute...')
-    
-    # Dès qu'il y un mot clef, on démarre la reconnaissance vocale
-    #detecteur.start(detected_callback=reco_vocale, # Action dès que l'on capte un mot clef
-    #               interrupt_check=interrupt_callback, # Check si on s'est arrêté
-    #               sleep_time=SLEEP_TIME)
-    
-    # Si on arrive ici, le detecteur s'est arrêté
-    #detecteur.terminate()
 
-    while 1:
+    while !interrupted: # On boucle !
         reco_vocale()
+    
+    print("[MAIN] Fin.")
