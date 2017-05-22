@@ -47,7 +47,7 @@ else:
     #detecteur = decoder.HotwordDetector(MODEL, sensitivity=SENSIBILITE)
     print('[MAIN] En écoute...')
 
-    while !interrupted: # On boucle !
+    while not interrupted: # On boucle !
         reco_vocale()
     
     print("[MAIN] Fin.")
