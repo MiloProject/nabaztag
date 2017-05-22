@@ -7,13 +7,12 @@ import re
 
 import pyaudio
 import wave
+import time
 
 from os import system
 from random import choice
 
 from config import AUDIO_CHUNK, AUDIO, AUDIO_ERR
-
-from snowboy_detect import decoder
 
 def joue(fichier):
 	"""
@@ -24,31 +23,20 @@ def joue(fichier):
 		fichier += ".wav"
 	
 	print("[PROC] On joue {}".format(fichier))
-	"""
-	wf = wave.open(AUDIO + fichier, 'rb')
-
-	p = pyaudio.PyAudio()
-
-	# On crée un 'stream', un accés à la sortie audio
-	stream = p.open(format=p.get_format_from_width(wf.getsampwidth()),
-        	        channels=wf.getnchannels(),
-       	        	rate=wf.getframerate(),
-			output=True)
-
-	data = wf.readframes(AUDIO_CHUNK)
 	
-	# Tant qu'il reste des données, on les envoient dans le stream
-	while data != '':
-		stream.write(data)
-		data = wf.readframes(AUDIO_CHUNK)
-
-	stream.stop_stream()
-	stream.close()
-
-	p.terminate()
-	"""
-
-	decoder.play_audio_file(fname=AUDIO+fichier)
+	wav = wave.open(AUDIO + fname, 'rb')
+	data = wav.readframes(wav.getnframes())
+	audio = pyaudio.PyAudio()
+	stream_out = audio.open(
+		format=audio.get_format_from_width(wav.getsampwidth()),
+		channels=wav.getnchannels(),
+		rate=wav.getframerate(), input=False, output=True)
+	stream_out.start_stream()
+	stream_out.write(data)
+	time.sleep(0.2)
+	stream_out.stop_stream()
+	stream_out.close()
+	audio.terminate()
 	
 def execute(cmd):
 	"""
