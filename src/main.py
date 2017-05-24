@@ -32,6 +32,7 @@ else:
         Gère les interruptions (ctrl-c, kill, etc...)
         """
         global interrupted
+        print("[MAIN] Interruption interceptée")
         interrupted = True
         
     def interrupt_callback():
