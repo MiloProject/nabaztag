@@ -9,9 +9,9 @@ recon = sr.Recognizer()
 micro = sr.Microphone()
 
 def calibre():
-	print("[RECO] Calibration...")
+	print("[RECO] Calibrage...")
 	with micro as source: recon.adjust_for_ambient_noise(source)
-	print("[RECO] Calibration : {}".format(recon.energy_threshold))
+	print("[RECO] Calibrage : {}".format(recon.energy_threshold))
   
 # Prend n'importe quel argument(s)
 def reco_vocale(*args, **kwargs):

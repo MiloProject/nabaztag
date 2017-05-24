@@ -1,8 +1,8 @@
 #! /usr/bin/python3
 
 from processor import joue
-from recon import reco_vocale
-from config import AUDIO_ERR, AUDIO_START, AUDIO_OK, SENSIBILITE, MODEL, TEST_HOST, SLEEP_TIME
+from recon import reco_vocale, calibre
+from config import AUDIO_ERR, AUDIO_START, AUDIO_OK, TEST_HOST
 
 from time import sleep
 
@@ -21,9 +21,6 @@ if not wifi.teste(TEST_HOST):
     joue(AUDIO_ERR)
     wifi.demarre()
 else:
-    # On vas pouvoir continuer
-    joue(AUDIO_OK)
-    
     # Marque s'il y eu une interruption
     interrupted = False
     
@@ -43,9 +40,12 @@ else:
     signal.signal(signal.SIGINT, signal_handler)
     # capture le signal SIGTERM (kill
     signal.signal(signal.SIGTERM, signal_handler)
-    
-    # Détecte le mot clef (Milo)
-    #detecteur = decoder.HotwordDetector(MODEL, sensitivity=SENSIBILITE)
+
+    calibre()
+
+    # On vas pouvoir continuer
+    joue(AUDIO_OK)
+
     print('[MAIN] En écoute...')
 
     while not interrupted: # On boucle !
