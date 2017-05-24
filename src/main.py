@@ -6,6 +6,8 @@ from config import AUDIO_ERR, AUDIO_START, AUDIO_OK, TEST_HOST
 
 from time import sleep
 
+from sys import exit
+
 # Pour les interruptions
 import signal
 
@@ -21,20 +23,13 @@ if not wifi.teste(TEST_HOST):
     joue(AUDIO_ERR)
     wifi.demarre()
 else:
-    # Marque s'il y eu une interruption
-    interrupted = False
-    
     def signal_handler(signal, frame):
         """
         Gère les interruptions (ctrl-c, kill, etc...)
         """
         global interrupted
         print("[MAIN] Interruption interceptée")
-        interrupted = True
-        
-    def interrupt_callback():
-        global interrupted
-        return interrupted
+        exit(0)
     
     # capture le signal SIGINT (ctrl-c)
     signal.signal(signal.SIGINT, signal_handler)
@@ -48,7 +43,7 @@ else:
 
     print('[MAIN] En écoute...')
 
-    while not interrupted: # On boucle !
+    while True:
         reco_vocale()
     
     print("[MAIN] Fin.")
