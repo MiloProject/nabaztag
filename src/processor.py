@@ -24,7 +24,7 @@ def joue(fichier):
 	
 	print("[PROC] On joue {}".format(fichier))
 	
-	wav = wave.open(AUDIO + fname, 'rb')
+	wav = wave.open(AUDIO + fichier, 'rb')
 	data = wav.readframes(wav.getnframes())
 	audio = pyaudio.PyAudio()
 	stream_out = audio.open(
