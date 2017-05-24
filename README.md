@@ -1,3 +1,5 @@
+> Version figée pour l'épreuve d'ISN
+
 # Nabaztag
 L'IA du nabaztag (milo).
 
